@@ -1,5 +1,5 @@
 FROM alpine
-MAINTAINER Mickaël PERRIN <dev@mickaelperrin.fr>
+MAINTAINER longjin <longjin@dragonos.org>
 
 # tzdata for time syncing
 # bash for entrypoint script
@@ -14,7 +14,7 @@ RUN mkdir -p /docker-entrypoint.d
 ADD /rsyncd.tpl.conf /
 
 # Default environment variables
-ENV TZ="Europe/Paris" \
+ENV TZ="Asia/Shanghai" \
     LANG="C.UTF-8"
 
 EXPOSE 873
